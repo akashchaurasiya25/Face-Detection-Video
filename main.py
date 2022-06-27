@@ -3,7 +3,7 @@ from random import randrange as r
 #dataset load
 trainedData = cv2.CascadeClassifier('Face.xml')
 #start cam
-cam = cv2.VideoCapture('20211010_223036.mp4')
+cam = cv2.VideoCapture('sample video.mp4')
 while True:
     success, frame = cam.read()
     grayimg = cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY)
